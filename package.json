@@ -1,14 +1,23 @@
 {
-  "name": "test-cursor-borrar",
+  "name": "figma-json-downloader",
+  "version": "1.0.0",
+  "description": "Herramienta CLI para descargar JSON de diseños de Figma",
+  "main": "src/index.js",
   "type": "module",
-  "version": "0.0.1",
+  "bin": {
+    "figma-downloader": "./src/index.js"
+  },
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "start": "node src/index.js",
+    "test": "jest"
   },
   "dependencies": {
-    "astro": "^5.5.2"
+    "axios": "^1.6.7",
+    "commander": "^12.0.0",
+    "dotenv": "^16.4.5",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
-}
+} 
